@@ -1,0 +1,610 @@
+@charset "utf-8";
+/* 簡單流變媒體
+   注意: 流變媒體要求您必須移除 HTML 中媒體的高度和寬度屬性
+   http://www.alistapart.com/articles/fluid-images/ 
+*/
+img, object, embed, video {
+	max-width: 100%;
+}
+/* IE 6 不支援最大寬度，因此寬度預設為 100% */
+.ie6 img {
+	width:100%;
+}
+
+/*
+	Dreamweaver 流變格線屬性
+	----------------------------------
+	dw-num-cols-mobile:		5;
+	dw-num-cols-tablet:		8;
+	dw-num-cols-desktop:	10;
+	dw-gutter-percentage:	25;
+	
+	靈感來自於 Ethan Marcotte 的「具回應功能的網頁設計」 
+	http://www.alistapart.com/articles/responsive-web-design
+	
+	以及 Joni Korpi 的「黃金格線系統」
+	http://goldengridsystem.com/
+*/
+
+/* 行動版面: 480px 以下。 */
+
+.gridContainer {
+	margin-left: auto;
+	margin-right: auto;
+	width: 87.36%;
+	padding-left: 1.82%;
+	padding-right: 1.82%;
+}
+#LayoutDiv1 {
+	clear: both;
+	float: left;
+	margin-left: 0;
+	width: 100%;
+}
+.bg {
+	background-image: url(../image/bg_phone.png);
+	background-repeat: no-repeat;
+	background-size: 100% 800px;
+	width: 100%;
+	height: 800px;
+	margin-top: 20px;
+	display: block;
+	position: absolute;
+	margin-left:-2%;
+	
+}
+.content_left {
+	margin-left: 15%;
+	margin-top: 75px;
+	width: 80%;
+	height: 190px;
+}
+#order {
+	margin-left: 15%;
+	margin-top: 75px;
+	width: 80%;
+	height: 500px;
+}
+.content_rl {
+	margin-left: 15%;
+	margin-top: 95px;
+	padding-left: 50px;
+	width: 75%;
+	height: 430px;
+}
+#content_login{
+	position:relative ;
+	margin-left: 13%;
+	margin-top: 23%;
+	width: 70%;
+	height: 65%;
+}
+#content_singup {
+	margin-left: 15%;
+	margin-top: 60px;
+	width: 70%;
+	height: 500px;
+	overflow: auto;
+}
+.content_right {
+	margin-left: 15%;
+	margin-top: 10px;
+	width: 80%;
+	height: 180px;
+	overflow: auto;
+}
+.content_rr {
+	margin-left: 15%;
+	margin-top: 10px;
+	padding-left: 50px;
+	width: 80%;
+	height: 200px;
+}
+.content_map1 {
+	margin-left: 15%;
+	margin-top: 75px;
+	width: 80%;
+	height: 370px;
+}
+.content_map2 {
+	margin-left: 15%;
+	overflow: auto;
+	float: left;
+	text-align: center;
+}
+.con_map1 {
+	clear: both;
+	float: left;
+	margin-left: 0;
+	width: 100%;
+	height:290px;
+	display: block;
+	text-align: center;
+}
+#page{
+	margin-left: 10%;
+	margin-top: 50px;
+	background: rgba(100%,100%,100%,0.6);
+}
+.img_room{
+	margin: 10px 0px 40px 0px;
+}
+.btn {
+	display: block;
+	position: absolute;
+	margin-top: 3%;
+	margin-left: 7%;
+	width: auto;
+	display: block;
+	position: absolute;
+	z-index: 1;
+}
+#btn_r {
+	float:left;
+}
+
+#btn_s {
+	float:left;
+}
+
+#btn_b {
+	float:left;
+}
+
+#btn_n {
+	float:left;
+}
+
+#btn_a {
+	float:left;
+}
+#btn_m {
+	float:left;
+}
+.content_new1 {
+	margin-left: 15%;
+	margin-top: 75px;
+	width: 80%;
+	height: 190px;
+}
+.content_new2 {
+	margin-left: 15%;
+	margin-top: 10px;
+	width: 80%;
+	height: 180px;
+	overflow: auto;
+}
+.new2_0 {
+	clear: both;
+	float: left;
+	margin-left: 0;
+	width: 100%;
+	display: block;
+}
+.new2_1 {
+	clear: both;
+	float: left;
+	margin-left: 0;
+	width: 100%;
+	display: block;
+}
+.new2_2 {
+	clear: both;
+	float: left;
+	margin-left: 0;
+	width: 100%;
+	display: block;
+}
+.new2_3 {
+	clear: both;
+	float: left;
+	margin-left: 0;
+	width: 100%;
+	display: block;
+}
+.new_table {
+	clear: both;
+	float: left;
+	margin-left: 0;
+	width: 100%;
+	display: block;
+}
+
+
+/* 表格版面: 481px 到 768px。樣式繼承自: 行動版面。 */
+
+@media only screen and (min-width: 481px) {
+.gridContainer {
+	width: 90.675%;
+	padding-left: 1.1625%;
+	padding-right: 1.1625%;
+}
+#LayoutDiv1 {
+	clear: both;
+	float: left;
+	margin-left: 0;
+	width: 100%;
+}
+.bg {
+	display: block;
+	background-image: url(../image/bg_phone.png);
+	background-repeat: no-repeat;
+	background-size: 100% 800px;
+	width: 100%;
+	height: 800px;
+	display: block;
+	position: absolute;
+	margin-left:-2.5%;
+}
+.content_left {
+	margin-left: 13%;
+	margin-top: 75px;
+	width: 75%;
+	height: 200px;
+}
+#order{
+	margin-left: 13%;
+	margin-top: 75px;
+	width: 75%;
+	height: 500px;
+}
+.content_rl {
+	margin-left: 13%;
+	margin-top: 75px;
+	width: 60%;
+	height: 450px;
+	float: left;
+}
+#content_login{
+	position:relative ;
+	margin-left: 13%;
+	margin-top: 4%;
+	width: 75%;
+	height: 65%;
+	float:left;
+}
+#content_singup {
+	margin-left: 13%;
+	margin-top: 60px;
+	width: 75%;
+	height: 500px;
+	overflow: auto;
+}
+.content_right {
+	margin-left: 13%;
+	margin-top: 12px;
+	width: 75%;
+	height: 180px;
+	overflow: auto;
+}
+.content_rr {
+	margin-left: 13%;
+	margin-top: 5px;
+	width: 60%;
+	height: 180px;
+	float: left;
+}
+.content_map1 {
+	margin-left: 13%;
+	margin-top: 75px;
+	width: 75%;
+	height: 340px;
+}
+.content_map2 {
+	margin-left: 13%;
+	margin-top: 15px;
+	float: left;
+	text-align: center;
+	overflow: fixed;
+}
+.con_map1 {
+	clear: both;
+	float: left;
+	margin-left: 0;
+	width: 100%;
+	height: 270px;
+	display: block;
+	text-align: center;
+}
+#page{
+	margin-top: 35px;
+	margin-left:8%
+	background: rgba(100%,100%,100%,0.6);
+}
+.img_room{
+	float:left;
+	clear:right;
+	margin: 5px 10px 60px 20px;
+}
+.btn {
+	margin-top: 1.5%;
+	margin-left: 8%;
+	width: 323px;
+	display: block;
+	position: absolute;
+	z-index: 1;
+	left: 28px;
+}
+#btn_r {
+	float:left;
+}
+
+#btn_s {
+	float:left;
+}
+
+#btn_b {
+	float:left;
+}
+
+#btn_n {
+	float:left;
+}
+
+#btn_a {
+	float:left;
+}
+
+#btn_m {
+	float:left;
+}
+.content_new1 {
+	margin-left: 14%;
+	margin-top: 13%;
+	width: 400px;
+	height: 390px;
+	float:left;
+}
+.content_new2 {
+	margin-left: 15%;
+	margin-top: 12%;
+	width: 400px;
+	height: 400px;
+	float:left;
+	overflow: hidden;
+}
+.new2_0 {
+	clear: both;
+	float: left;
+	margin-left: 0;
+	width: 400px;
+	height: 400px;
+	display: block;
+	overflow: auto;
+}
+.new2_1 {
+	clear: both;
+	float: left;
+	margin-left: 0;
+	width: 400px;
+	height: 400px;
+	display: block;
+	overflow: auto;
+}
+.new2_2 {
+	clear: both;
+	float: left;
+	margin-left: 0;
+	width: 400px;
+	height: 400px;
+	display: block;
+	overflow: auto;
+}
+.new2_3 {
+	clear: both;
+	float: left;
+	margin-left: 0;
+	width: 400px;
+	height: 400px;
+	display: block;
+	overflow: auto;
+}
+.new_table {
+	clear: both;
+	float: left;
+	margin-left: 0;
+	width: 100%;
+	display: block;
+}
+
+}
+
+/* 桌面版面: 769px 到最大 1232px。樣式繼承自: 行動版面和表格版面。 */
+
+@media only screen and (min-width: 769px) {
+.gridContainer {
+	width: 88.2%;
+	max-width: 1232px;
+	padding-left: 0.9%;
+	padding-right: 0.9%;
+}
+#LayoutDiv1 {
+	clear: both;
+	float: left;
+	margin-left: 0;
+	width: 100%;
+}
+.bg {
+	width: 100%;
+	background-image: url(../image/bg.png);
+	background-repeat: no-repeat;
+	background-size: 100% 600px;
+	height: 600px;
+	margin-top: 25px;
+	display: block;
+	margin-left:-6.5%;
+}
+.content_left {
+	margin-left: 13%;
+	margin-top: 80px;
+	width: 30%;
+	height: 390px;
+	float:left;
+}
+#order{
+	margin-left: 13%;
+	margin-top: 80px;
+	width: 30%;
+	height: 390px;
+	float:left;
+}
+.content_rl {
+	margin-left: 13%;
+	margin-top: 80px;
+	width: 25%;
+	height: 390px;
+	float: left;
+}
+#content_login{
+	position:relative ;
+	margin-left: 14%;
+	margin-top: 10%;
+	width: 30%;
+	height: 65%;
+	float:left;
+}
+#content_singup {
+	margin-left: 15%;
+	margin-top: 10%;
+	width: 35%;
+	height: 450px;
+	float:left;
+	overflow: auto;
+}
+.content_right {
+	margin-left: 15%;
+	margin-top: 12px;
+	width: 37%;
+	height: 430px;
+	float:left;
+	overflow: auto;
+}
+.content_rr {
+	margin-left: 15%;
+	margin-top: 92px;
+	width: 30%;
+	height: 430px;
+	float: left;
+}
+.content_map1 {
+	margin-left: 13%;
+	margin-top: 80px;
+	width: 30%;
+	height: auto;
+	float:left;
+}
+.content_map2 {
+	margin-left: 12%;
+	margin-top: 12%;
+	float: left;
+}
+.con_map1 {
+	clear: both;
+	float: left;
+	margin-left: 15px;
+	width: 90%;
+	display: block;
+	text-align: center;
+}
+#page{
+	width: 400px;
+	margin-top: 80px;
+	margin-left: 53.5%;
+	background: rgba(100%,100%,100%,0.6);
+}
+.img_room{
+	margin: 5px 0px 60px 0px;
+}
+.btn {
+	margin-top: 0.3%;
+	margin-left: 11%;
+	display: block;
+	position: absolute;
+}
+#btn_r {
+	float: left;
+	margin: 0px 0.1%;
+}
+
+#btn_s {
+	float:left;
+	margin: 0px 0.1%;
+}
+
+#btn_b {
+	float:left;
+	margin: 0px 0.1%;
+}
+
+#btn_n {
+	float:left;
+	margin: 0px 0.1%;
+}
+
+#btn_a {
+	float:left;
+	margin: 0px 0.1%;
+}
+#btn_m {
+	float: left;
+	margin: 0px 0.1%;
+}
+.content_new1 {
+	margin-left: 14%;
+	margin-top: 13%;
+	width: 400px;
+	height: 390px;
+	float:left;
+}
+.content_new2 {
+	margin-left: 15%;
+	margin-top: 12%;
+	width: 400px;
+	height: 400px;
+	float:left;
+	overflow: hidden;
+}
+.new2_0 {
+	clear: both;
+	float: left;
+	margin-left: 0;
+	width: 400px;
+	height: 400px;
+	display: block;
+	overflow: auto;
+}
+.new2_1 {
+	clear: both;
+	float: left;
+	margin-left: 0;
+	width: 400px;
+	height: 400px;
+	display: block;
+	overflow: auto;
+}
+.new2_2 {
+	clear: both;
+	float: left;
+	margin-left: 0;
+	width: 400px;
+	height: 400px;
+	display: block;
+	overflow: auto;
+}
+.new2_3 {
+	clear: both;
+	float: left;
+	margin-left: 0;
+	width: 400px;
+	height: 400px;
+	display: block;
+	overflow: auto;
+}
+.new_table {
+	clear: both;
+	float: left;
+	margin-left: 0;
+	width: 100%;
+	display: block;
+}
+}

@@ -1,0 +1,31 @@
+@charset "utf-8";
+/* CSS Document */
+
+body {
+	line-height: 2.3em;
+	font-size: 16px;
+}
+a:link {
+	text-decoration: none;
+}
+
+#header {
+	background-color:#639;
+	height: auto;
+	width: 400px;
+	margin: 20px 0 0 0;
+}
+.white_text {
+	color:#FFF;
+}
+.input_text{
+	background-image: url(../image/line.png);
+	background-color: transparent;
+	border-style:none;
+}
+.input_board{
+	background-image: url(../image/line.png);
+	background-color: transparent;
+	background-repeat: repeat;
+	border-style: none;
+}
