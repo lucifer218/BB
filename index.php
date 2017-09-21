@@ -91,7 +91,9 @@ if(isset($_SESSION["id"])) {
 	echo "<a href='update.php'>修改會員資料</a>";
 	}
 ?>
-      </div>
+<br>
+　　歡迎來到！以「效仿國外一些民宿的小特色，類似於日記本的形式，放置於民宿中供來住宿的房客們閱讀及書寫，住於此期間所發生的大小事情都可以記錄下來」這樣的一個概念來設計。
+</div>
       <div class="content_right">
       </div>
     </div>
