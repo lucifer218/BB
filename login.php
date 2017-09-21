@@ -94,15 +94,12 @@ function MM_swapImage() { //v3.0
 			  //header('Location: http://www.example.com/');
 			  echo '<meta http-equiv="REFRESH" CONTENT=0;url=welcome.php>';
 			  $_SESSION["id"]=$row[0];
-			  $_SESSION["password"]=$row[1];
-			  $_SESSION["name"]=$row[2];
+			  $_SESSION["password"]=$row[2];
+			  $_SESSION["name"]=$row[1];
 			  $_SESSION["ex"]=$row[3];
 			  $_SESSION["birthday"]=$row[4];
 			  $_SESSION["email"]=$row[5];
 			  $_SESSION["address"]=$row[6];
-			  echo $_SESSION["id"]." ";
-			  echo $_SESSION["name"]." ";
-			  echo $row[1]; 
 			  }
 	  }
   }
